@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(0, 162, 226);
+    padding: 2rem;
+
+}
+h1 {
+    color: red;
+    text-align: center;
+    font-family: Sans-serif;
+}
+
+.logo{
+    padding: 2rem;
+}
+.navBar{
+    display: inline;
+
+    padding: 2rem;
+    top:0;
+}
