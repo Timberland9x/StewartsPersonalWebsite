@@ -1,3 +1,3 @@
-# A Website for Stewart Choi
+# A Website for Stewart Choi to show off his work
 
-# Code Stack HTML, CSS, JS
+# Code Stack: HTML, CSS, JS
