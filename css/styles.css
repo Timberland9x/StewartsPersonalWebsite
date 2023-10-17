@@ -2,10 +2,11 @@ body {
     /* background-color: #121212; */
     padding: 0;
     margin: 0;
+    font-family: Verdana;
 }
 h1 {
     text-align: center;
-    font-family: Sans-serif;
+    font-family: Verdana;
     color: rgb(0, 0, 0);
 }
 header{
@@ -77,4 +78,19 @@ footer{
 
 .active{
     background: Red;
+}
+
+#UCM_Seal{
+height: 110px;
+margin-right: 9px;
+margin-left: -60px;
+}
+
+#UCM_Logo{
+    height: 80px;
+    margin-bottom: 13px;
+    }
+
+p{
+    margin: 50 0 10 0
 }
