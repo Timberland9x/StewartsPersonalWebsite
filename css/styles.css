@@ -3,6 +3,9 @@ body {
     padding: 0;
     margin: 0;
     font-family: Verdana;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 h1 {
     text-align: center;
@@ -67,13 +70,17 @@ a{
 }
 
 section{
+    flex: 1 0 auto;
     text-align: center;
     font-family: Sans-serif;
     color: rgb(0, 0, 0);
+    margin-bottom: 50px;
 }
 
 footer{
-    padding: 10px;
+    padding: 0 0 0 0;
+    flex-shrink: 0;
+
 }
 
 .active{
@@ -96,6 +103,74 @@ margin-left: -60px;
     border-radius: 50px;
     height: 70px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 9px;
+}
+
+.projectContainer{
+    margin-top: 30px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.projectImage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.projectImage img {
+    height: 600px;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0 0 0 0;
+    transition: 180ms transform ease-in-out;
+
+}
+
+.projectImage img:hover {
+    transform: scale(1.025);
+
+}
+.projectTitle{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+.projectText{
+    margin: 0 0 0 0;
+    padding: 7px;
+    width: 40%;    
+    text-align: left;
+    text-indent: 35px;
+    line-height: 1.2;
+    /* letter-spacing: 1px; */
+    font-family: Verdana;
+    overflow-y: auto;
+    height: 100px;
+    background-color: #f8f8f8;  
+    border-radius: 10px;  
+
+}
+
+.projectText::-webkit-scrollbar{
+    width: 5px;
+}
+.projectText::-webkit-scrollbar-track{
+    width: 5px;
+    height: 8px;
+    background-color: #aaa;    
+}
+
+.projectText::-webkit-scrollbar-thumb{
+    background: #000;
+}
+
+.PCBuildContainer{
+    margin: 30 0 0 0;
+    padding: 0 0 0 0;
+
 }
 
 .PCBuildContent{
@@ -139,7 +214,8 @@ scroll-padding-inline: .5rem;
 }
 
 p{
-    margin: 50 0 10 0
+    margin: 20 0 10 0;
+    padding:0 0 0 0;
 }
 
 .links{
@@ -147,10 +223,44 @@ p{
     text-decoration: underline;
 }
 
-footer{
-    margin: 50 50 50 50;
-}
 
 video source{
     margin: 100 20 10 10;
 }
+
+footer{
+    margin: 20 0 0 0;
+    padding: 30 0 21 0;
+
+    background-color: rgb(229, 229, 229);
+}
+
+.footerDiv{
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 0 0;
+    margin: 0 0 0 60;
+}
+.footerDiv a{
+    padding: 0 0 0 0;
+    margin: 0 0 0 25;
+}
+#footerSocialIcon{
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    height: 48px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+}
+
+#footerSocialIcon:hover{
+    cursor: pointer;
+}
+
+.footerText{
+    font-family: Verdana;
+    font-weight: bold;
+    margin: 17 20 0 20;
+    height: 48px;    
+}
+
