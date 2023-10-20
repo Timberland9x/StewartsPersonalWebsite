@@ -3,4 +3,4 @@
 # Code Stack: HTML, CSS, JS
 
 # Vercel for Live Hosting of website
-https://stewarts-personal-website.vercel.app/
+https://stewartchoi.vercel.app/

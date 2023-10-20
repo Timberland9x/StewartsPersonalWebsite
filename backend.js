@@ -1,11 +1,10 @@
-$("a").click(function(){
-    $("a").removeClass("active");
-        $(this).addClass("active");
-   });
+const activePage = window.location.pathname;    
+console.log(activePage)
 
-function project()
-{
-    document.getElementsByClassName("navUl").style.color = "red";
-    console.log("project test")
-};
-
+const navlink = document.querySelectorAll(".navBarElement").
+forEach(link => {
+    if(link.href.includes(`${activePage}`)){
+        link.classList.add('active');
+    } 
+}
+)
