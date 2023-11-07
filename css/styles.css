@@ -16,6 +16,7 @@ header{
     display: inline-block;
 }
 .navBar{
+    /* position: fixed; */
     display: flex;
     margin: 0;
     padding: 0;
@@ -103,6 +104,29 @@ section{
     margin-bottom: 50px;
 }
 
+#topBtn{
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    border-radius: 200px;
+    bottom: 100px;
+    right: 80px;
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(70, 70, 70, 0.805); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px;
+    font-size: 18px; /* Increase font size */
+
+}
+
+#topBtn:hover{
+    background-color: #555; /* Add a dark-grey background on hover */
+
+}
+
+
 footer{
     padding: 0 0 0 0;
     flex-shrink: 0;
@@ -159,6 +183,7 @@ margin-left: -60px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 10px;
 }
 .projectImage img {
     height: 600px;
