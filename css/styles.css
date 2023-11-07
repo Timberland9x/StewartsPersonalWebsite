@@ -16,6 +16,7 @@ header{
     display: inline-block;
 }
 .navBar{
+    /* position: fixed; */
     display: flex;
     margin: 0;
     padding: 0;
@@ -103,6 +104,29 @@ section{
     margin-bottom: 50px;
 }
 
+#topBtn{
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    border-radius: 200px;
+    bottom: 100px;
+    right: 80px;
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(70, 70, 70, 0.805); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px;
+    font-size: 18px; /* Increase font size */
+
+}
+
+#topBtn:hover{
+    background-color: #555; /* Add a dark-grey background on hover */
+
+}
+
+
 footer{
     padding: 0 0 0 0;
     flex-shrink: 0;
@@ -159,6 +183,7 @@ margin-left: -60px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 10px;
 }
 .projectImage img {
     height: 600px;
@@ -209,9 +234,12 @@ margin-left: -60px;
 .projectText::-webkit-scrollbar-thumb{
     background: #000;
 }
-
+.textDate{
+    font-family: Verdana;
+    font-size: 22px;
+}
 .PCBuildContainer{
-    margin: 30 0 0 0;
+    margin: 30 0 30 0;
     padding: 0 0 0 0;
 
 }
@@ -219,11 +247,12 @@ margin-left: -60px;
 .PCBuildContent{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
-    overflow-y: hidden;
-    
+    overflow-y: hidden;    
 }
+
 
 .PCBuildImages{
     padding: 4px;
@@ -239,12 +268,29 @@ margin-left: -60px;
 .PCBuildImages:hover{
     transform: scale(1.025);
 }
+#PCImageHor{
+    width: 380px;
+}
 
 .PCBuildContentText{
     margin: 0 0 0 0;
     padding: 0 0 0 0;
     display: flex;
     flex-direction: column;
+}
+.textBox{
+    border: #000;
+    margin: 20px 20px 20px 20px;
+    padding: 10px;
+    text-align: center;
+    font-family: Verdana;
+    width: 700px;
+    /* max-width: 800px; */
+    margin: auto;
+}
+
+.spacer{
+    padding: 20px;
 }
 
 .snapInline{
@@ -257,8 +303,9 @@ scroll-padding-inline: .5rem;
 }
 
 p{
-    margin: 20 0 10 0;
+    margin: 10 0 10 0;
     padding:0 0 0 0;
+    font-family: Verdana;
 }
 
 .links{
