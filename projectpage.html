@@ -1,78 +1,157 @@
 <html>
-    <link rel="stylesheet" href="../css/styles.css">
-    <script defer src="backend.js"></script>
-<head>
-    <link rel="icon" type="image/png" href="../image/GradPhoto.jpg"/>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <script defer src="backend.js"></script>
+  <head>
+    <link rel="icon" type="image/png" href="../image/GradPhoto.jpg" />
 
     <title>Stewart Choi</title>
-</head>
-<nav class="navBar">
-    <a href="./index.html" class="logoDiv"> 
-        <img src="../image/GradPhoto.jpg" alt="Graduation Photo logo">
-        <svg width="75" height="60" xmlns="http://www.w3.org/2000/svg">
+  </head>
+  <nav class="navBar">
+    <a href="./index.html" class="logoDiv">
+      <img src="../image/GradPhoto.jpg" alt="Graduation Photo logo" />
+      <svg width="75" height="60" xmlns="http://www.w3.org/2000/svg">
         <g>
-            <text xml:space="preserve" text-anchor="start" font-family="'Markazi Text'" font-size="14" id="svg_6" y="30" x="1" stroke-dasharray="2,2" >Stewart Choi</text>
+          <text
+            xml:space="preserve"
+            text-anchor="start"
+            font-family="'Markazi Text'"
+            font-size="14"
+            id="svg_6"
+            y="30"
+            x="1"
+            stroke-dasharray="2,2"
+          >
+            Stewart Choi
+          </text>
         </g>
-        </svg>        
+      </svg>
     </a>
     <ul class="navUl">
-        <li><a class="navBarElement" href="./index.html">Home</a></li>
-        <li><a class="navBarElement" href="./projectpage.html">Projects</a></li>
-        <li><a class="navBarElement" href="./biopage.html">Bio</a></li>
-        <li><a class="navBarElement" href="./contact.html">Contact</a></li>
-        <li><a class="navBarElement" href="./pcbuilds.html">PC Builds</a></li>
+      <li><a class="navBarElement" href="./index.html">Home</a></li>
+      <li><a class="navBarElement" href="./projectpage.html">Projects</a></li>
+      <li><a class="navBarElement" href="./biopage.html">Bio</a></li>
+      <li><a class="navBarElement" href="./contact.html">Contact</a></li>
+      <li><a class="navBarElement" href="./pcbuilds.html">PC Builds</a></li>
     </ul>
-</nav>
+  </nav>
 
-<body>
-    <header>
-
-    </header>  
+  <body>
+    <header></header>
 
     <section>
-        <h1>My Projects</h1>
+      <h1>My Projects</h1>
 
-        <p><a class="links" href="https://github.com/Timberland9x">My GitHub</a></p>
-        <hr>
+      <p>
+        <a class="links" href="https://github.com/Timberland9x">My GitHub</a>
+      </p>
+      <hr />
 
+      <div class="projectContainer">
+        <div class="projectTitle">
+          <p>
+            <a class="links" href="https://cse310.vercel.app/"
+              >Relevance Weighted Multiple Meeting Scheduler</a
+            >
+          </p>
+        </div>
+        <div class="projectImage">
+          Project Poster:<img
+            src="../image/Projects/2023-01-Spring-CSE-Team310-poster.png"
+            alt="Relevance Weighted Multiple Meeting Scheduler Poster"
+          />
+        </div>
+        <div class="projectText">
+          <b>Project Description:</b> Developed a tool that allows organizers to
+          prioritize attendees based on relevance, and attendees to select
+          availability in increments of .25. The tool aims to improve the
+          scheduling process, providing a weighted average schedule that
+          considers availability and relevance, resulting in more efficient and
+          effective planning of events, conferences, and meetings.
+        </div>
+      </div>
 
-        <div class="projectContainer">
-           
-            <div class ="projectTitle"> <p> <a class="links" href="https://cse310.vercel.app/">Relevance Weighted Multiple Meeting Scheduler</a></p></div>
-            <div class="projectImage">Project Poster:<img src="../image/Projects/2023-01-Spring-CSE-Team310-poster.png" alt="Relevance Weighted Multiple Meeting Scheduler Poster">
-            </div>
-            <div class ="projectText"> <b>Project Description:</b> Developed a tool that allows organizers to prioritize attendees based on relevance, and attendees to select availability in increments of .25. The tool aims to improve the scheduling process, providing a weighted average schedule that considers availability and relevance, resulting in more efficient and effective planning of events, conferences, and meetings.</div>
-            
+      <div class="projectContainer">
+        <div class="projectTitle">
+          <p>
+            <a class="links" href="http://timberland9x.pythonanywhere.com/"
+              >Twatter</a
+            >
+          </p>
         </div>
 
-        <div class="projectContainer">
-            <div class ="projectTitle"> <p> <a class="links" href="http://timberland9x.pythonanywhere.com/">Twatter</a></p></div>
+        <div class="projectImage">
+          Project Image:
+          <img
+            src="../image/Projects/TwatterImage.png"
+            alt="Twatter Homepage Image"
+          />
+        </div>
+        <div class="projectText">
+          <b>Project Description:</b> Developed a Twitter Clone web application
+          for my "Full Stack Web Development class," where I took charge of
+          frontend development and contributed to backend implementation.
+          Features we were able to implement were a login/registration, creating
+          posts, likes system, and follower/following system. Built using HTML,
+          CSS, JavaScript, Python Flask, and SQLite.
+        </div>
+      </div>
 
-            <div class="projectImage">Project Image: <img src="../image/Projects/TwatterImage.png" alt="Twatter Homepage Image">
-            </div>
-            <div class ="projectText"> <b>Project Description:</b> Developed a Twitter Clone web application for my "Full Stack Web Development class," where I took charge
-                of frontend development and contributed to backend implementation. Features we were able to implement were a login/registration, creating posts, likes
-                system, and follower/following system. Built using HTML, CSS, JavaScript, Python Flask, and SQLite.</div>
-            
+      <div class="projectContainer">
+        <div class="projectTitle">
+          <p>
+            Pocket Translator
 
-
+            <a
+              class="links"
+              href="../image/Projects/CSE155-PocketTranslator.pdf"
+              target="_blank"
+              >(Project Slides)</a
+            >
+          </p>
         </div>
 
-        
+        <div class="projectImage">
+          Project Demo Video:
+          <video width="340" height="720" controls>
+            <source
+              src="../image/Projects/PocketTranslatorDemo.mp4"
+              alt="Pocket
+            Translator Demo Video"
+            />
+          </video>
+        </div>
+        <div class="projectText">
+          <b>Project Description:</b> Pocket Translator is a mobile application
+          designed for travelers and foreigners to easily translate text from
+          their surroundings. Users can either take a new photo with their
+          camera or upload an existing image from their gallery. The app uses
+          Google Cloud Vision API to detect foreign text in the image and then
+          uses the Google Translate API to provide a translation. The frontend
+          is built with React Native (for cross-platform mobile support), and
+          the backend is powered by Python Flask.
+        </div>
+      </div>
 
-
-
-        <hr>
-
+      <hr />
     </section>
 
     <button onclick="topFunction()" id="topBtn" title="Go to top">⬆️</button>
     <footer>
-        <div class="footerDiv">
-            <p class="footerText">Stewart Choi - Bay Area ❤️</p>
-            <a href="https://github.com/Timberland9x" target="_blank"><img id="footerSocialIcon" src = "../image/GitHubIcon.png" alt="GitHubIcon"/></a>
-            <a href="https://www.linkedin.com/in/stewartchoi/" target="_blank"><img id="footerSocialIcon"  src = "../image/LinkdinIcon.png" alt="LinkdinIcon.png"/></a>
-        </div>
+      <div class="footerDiv">
+        <p class="footerText">Stewart Choi - Bay Area ❤️</p>
+        <a href="https://github.com/Timberland9x" target="_blank"
+          ><img
+            id="footerSocialIcon"
+            src="../image/GitHubIcon.png"
+            alt="GitHubIcon"
+        /></a>
+        <a href="https://www.linkedin.com/in/stewartchoi/" target="_blank"
+          ><img
+            id="footerSocialIcon"
+            src="../image/LinkdinIcon.png"
+            alt="LinkdinIcon.png"
+        /></a>
+      </div>
     </footer>
-</body>
-
+  </body>
+</html>
